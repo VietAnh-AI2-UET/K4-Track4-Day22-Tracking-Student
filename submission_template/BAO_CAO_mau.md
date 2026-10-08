@@ -10,11 +10,11 @@ Mỗi video: tracker bạn nộp, `conf`, `iou`, điều bạn **nhìn thấy** 
 
 | Video | Tracker | conf | iou | Quan sát khi xem video | Đã thử nhưng loại |
 |---|---|---|---|---|---|
-| video_1 (quảng trường, tĩnh, ban ngày) | | | | | |
-| video_2 (phố đêm, tĩnh, rất đông) | | | | | |
-| video_3 (camera di động, ảnh nhỏ) | | | | | |
-| video_4 (trong nhà, camera di chuyển) | | | | | |
-| video_5 (trên xe bus, giao lộ đông) | | | | | |
+| video_1 (quảng trường, tĩnh, ban ngày) | bytetrack | 0.3 | 0.5 |  |  |
+| video_2 (phố đêm, tĩnh, rất đông) | bytetrack | 0.3 | 0.5 |  |  |
+| video_3 (camera di động, ảnh nhỏ) | bytetrack | 0.3 | 0.5 |  |  |
+| video_4 (trong nhà, camera di chuyển) | bytetrack | 0.3 | 0.5 |  |  |
+| video_5 (trên xe bus, giao lộ đông) | bytetrack | 0.3 | 0.5 |  |  |
 
 ## 2. Số liệu video_1
 

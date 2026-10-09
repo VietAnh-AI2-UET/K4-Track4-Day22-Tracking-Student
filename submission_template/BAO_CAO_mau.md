@@ -10,11 +10,11 @@ Mỗi video: tracker bạn nộp, `conf`, `iou`, điều bạn **nhìn thấy** 
 
 | Video | Tracker | conf | iou | Quan sát khi xem video | Đã thử nhưng loại |
 |---|---|---|---|---|---|
-| video_1 (quảng trường, tĩnh, ban ngày) | botsort | 0.3 | 0.5 |  |  |
-| video_2 (phố đêm, tĩnh, rất đông) | bytetrack | 0.3 | 0.5 |  |  |
-| video_3 (camera di động, ảnh nhỏ) | bytetrack | 0.3 | 0.5 |  |  |
-| video_4 (trong nhà, camera di chuyển) | bytetrack | 0.3 | 0.5 |  |  |
-| video_5 (trên xe bus, giao lộ đông) | bytetrack | 0.3 | 0.5 |  |  |
+| video_1 (quảng trường, tĩnh, ban ngày) | botsort | 0.3 | 0.5 | Tracking được những người ở gần camera<br> Ở xa thì không<br> Người biến mất một lúc thì mất ID<br> bounding box đúng vị trí | ByteTrack, conf=0.3, iou=0.5; loại vì HOTA 25.488 thấp hơn BoT-SORT (26.424) |
+| video_2 (phố đêm, tĩnh, rất đông) | bytetrack | 0.3 | 0.5 | Không nhận diện, tracking được tất cả mọi người<br> bounding box đúng vị trí | Chưa thử cấu hình khác |
+| video_3 (camera di động, ảnh nhỏ) | bytetrack | 0.3 | 0.5 | Nhận diện + tracking được tất cả người trong video<br> bounding box đúng vị trí | Chưa thử cấu hình khác |
+| video_4 (trong nhà, camera di chuyển) | bytetrack | 0.3 | 0.5 | Nhận diện tốt, không có lỗi<br> bounding box đúng vị trí | BoT-SORT, conf=0.3, iou=0.5; không chọn vì các khung hình đã xem chưa cho thấy cải thiện rõ so với ByteTrack |
+| video_5 (trên xe bus, giao lộ đông) | bytetrack | 0.3 | 0.5 | Không nhận diện + tracking được tất cả người trong video<br> bounding box đúng vị trí | Chưa thử cấu hình khác |
 
 ## 2. Số liệu video_1
 
